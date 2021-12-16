@@ -1,0 +1,168 @@
+
+/* THIS FILE IS FROM GRAPHVIEW BUT CONTAINS MODIFICATIONS */
+
+CustomPort {
+    height: 24px;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    --port-color: rgb(200, 200, 200);
+    --disabled-port-color: rgb(70, 70, 70);
+}
+
+CustomPort.input {
+    flex-direction: row;
+}
+
+CustomPort.output {
+    flex-direction: row-reverse;
+}
+
+CustomPort > #connector {
+    border-color: rgb(70, 70, 70);
+    background-color: #212121;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 4px;
+    margin-right: 4px;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+}
+
+CustomPort > #connector:hover {
+    border-color: #f0f0f0
+}
+
+CustomPort > #connector > #cap
+{
+    background-color: #212121;
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+}
+
+CustomPort > #connector > #cap:hover
+{
+    background-color: #f0f0f0;
+}
+
+CustomPort > #connector.portHighlight {
+    border-color: #f0f0f0;
+}
+
+CustomPort > #type {
+    color: #c1c1c1;
+    font-size: 11px;
+    height: 16px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 4px;
+}
+
+CustomPort.input > #type {
+    -unity-text-align: middle-left;
+}
+
+CustomPort.output > #type {
+    -unity-text-align:middle-right;
+}
+
+/*******************************/
+/* CustomPorts colors by types */
+/*******************************/
+
+CustomPort.typeInt {
+    --port-color:#9481E6;
+}
+
+CustomPort.typeInt.inactive {
+    --port-color:#4A4073;
+}
+
+CustomPort.typeInt32 {
+    /* Same as typeInt */
+    --port-color:#9481E6;
+}
+
+CustomPort.typeInt32.inactive {
+    /* Same as typeInt */
+    --port-color:#4A4073;
+}
+
+CustomPort.typeFloat {
+    --port-color:#84E4E7;
+}
+
+CustomPort.typeFloat.inactive {
+    --port-color:#427273;
+}
+
+CustomPort.typeSingle {
+    /* Same as typeFloat */
+    --port-color:#84E4E7;
+}
+
+CustomPort.typeSingle.inactive {
+    /* Same as typeFloat */
+    --port-color:#427273;
+}
+
+CustomPort.typeDouble {
+    /* Same as typeFloat */
+    /* todo we might want to differentiate that from float */
+    --port-color:#84E4E7;
+}
+
+CustomPort.typeDouble.inactive {
+    /* Same as typeFloat */
+    /* todo we might want to differentiate that from float */
+    --port-color:#427273;
+}
+
+CustomPort.typeVector2 {
+    /* Same as typeFloat2 */
+    --port-color:#9AEF92;
+}
+
+CustomPort.typeVector2.inactive {
+    /* Same as typeFloat2 */
+    --port-color:#4D7749;
+}
+
+CustomPort.typeVector3 {
+    /* Same as typeFloat3 */
+    --port-color:#F6FF9A;
+}
+
+CustomPort.typeVector3.inactive {
+    /* Same as typeFloat3 */
+    --port-color:#7B7F4D;
+}
+
+CustomPort.typeString {
+    --port-color:#FCD76E;
+}
+
+CustomPort.typeString.inactive {
+    --port-color:#7E6B37;
+}
+
+CustomPort.typeBehaviourNode {
+  --port-color:#9481E6;
+}
+
+CustomPort.typeBoolean {
+  --port-color:#f63c2b;
+}
+
+CustomPort.typeAnimationCurve {
+  --port-color:#6ce64b;
+}

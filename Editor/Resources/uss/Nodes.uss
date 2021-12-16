@@ -1,0 +1,39 @@
+RootNode #node-border {
+  border-radius: 18px;
+}
+RootNode #selection-border {
+  border-radius: 20px;
+}
+RootNode #title Label {
+  padding-left: 5px;
+}
+RootNode #title #collapse-button {
+  display: none;
+}
+RootNode CustomPort {
+  margin-top: 5px;
+  margin-right: 5px;
+}
+RootNode CustomPort Label {
+  display: none;
+}
+
+PropertyNode #node-border {
+  border-radius: 18px;
+}
+PropertyNode #selection-border {
+  border-radius: 20px;
+}
+PropertyNode #title Label {
+  padding-left: 5px;
+}
+PropertyNode #title #collapse-button {
+  display: none;
+}
+PropertyNode CustomPort {
+  margin-top: 5px;
+  margin-right: 5px;
+}
+PropertyNode CustomPort Label {
+  display: none;
+}

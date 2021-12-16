@@ -1,0 +1,38 @@
+#propertyContainer {
+  background-color: rgba(32, 32, 32, 0.7);
+}
+
+PropertyRow EnumField,
+PropertyRow TextField,
+PropertyRow Label,
+PropertyRow Toggle,
+PropertyRow DoubleField {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+PropertyRow > #container {
+  flex-grow: 1;
+  padding-left: 8px;
+  padding-right: 8px;
+  flex-direction: row;
+  min-width: 200px;
+}
+
+PropertyRow > #container > #label {
+  min-width: 75px;
+  height: 24px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+PropertyRow > #container > #label > Label {
+  margin-bottom: 3px;
+}
+
+PropertyRow > #container > #content{
+  flex-grow: 1;
+  min-width: 75px;
+  height: 24px;
+  justify-content: center;
+}

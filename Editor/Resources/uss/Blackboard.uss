@@ -1,0 +1,11 @@
+Blackboard #container {
+  flex-direction: row;
+}
+
+Blackboard #container > #label {
+  flex-grow: 1;
+}
+
+Blackboard #container > #value {
+  flex-grow: 1;
+}
